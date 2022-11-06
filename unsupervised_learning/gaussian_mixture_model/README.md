@@ -15,3 +15,5 @@ EM参考文章：
 
 
 以下是利用高斯混合模型的聚类效果：
+
+![](https://raw.githubusercontent.com/chubbylhao/ML_Algorithms/main/unsupervised_learning/gaussian_mixture_model/gaussian_mixture_model_res.png)
