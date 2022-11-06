@@ -14,6 +14,12 @@ EM参考文章：
 
 
 
+下图截自李航的《统计学习方法》：
+
+![](https://raw.githubusercontent.com/chubbylhao/ML_Algorithms/main/unsupervised_learning/gaussian_mixture_model/gaussian_mixture_model_1.png)
+
+![](https://raw.githubusercontent.com/chubbylhao/ML_Algorithms/main/unsupervised_learning/gaussian_mixture_model/gaussian_mixture_model_2.png)
+
 以下是利用高斯混合模型的聚类效果：
 
 ![](https://raw.githubusercontent.com/chubbylhao/ML_Algorithms/main/unsupervised_learning/gaussian_mixture_model/gaussian_mixture_model_res.png)
