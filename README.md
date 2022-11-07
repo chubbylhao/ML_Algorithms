@@ -53,18 +53,18 @@
 
   #### 无监督学习
 
-- k均值聚类：也许这是人们听过最多的聚类方法了
+- k均值聚类：也许这是人们听过最多的也是最基本的聚类方法了
 
-- DBSCAN：密度聚类，相比于k均值，其可用于**非凸**数据
+- DBSCAN：密度聚类，相比于k均值，其可用于非凸数据样本
 
 - 高斯混合模型：任意多高斯模型的线性组合理论上可以表示所有类型的概率分布模型
 
   - [高斯混合模型及其EM算法的理解](https://blog.csdn.net/jinping_shi/article/details/59613054) 
   - [详解EM算法和高斯混合模型](https://blog.csdn.net/lin_limin/article/details/81048411?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166771942416800182189305%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=166771942416800182189305&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~hot_rank-3-81048411-null-null.142^v63^control,201^v3^control,213^v1^t3_control2&utm_term=%E9%AB%98%E6%96%AF%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B) 
 
-- 奇异值分解：图像处理中很好使
+- 奇异值分解：降维压缩方法
 
-- 主成分分析：图像处理中很好使
+- 主成分分析：降维压缩方法
 
 - Apriori：关联规则分析，实际上就是概率与组合的问题
 
