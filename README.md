@@ -4,6 +4,8 @@
 >
 > ~~持续更新中
 
+------
+
 #### 有监督学习
 
 - 线性回归：普通线性回归、Ridge回归、LASSO回归、广义线性回归
@@ -96,4 +98,5 @@
 #### 资源列表
 
 - [ShowMeAI](https://www.showmeai.tech/) 
+- [scikit-learn](https://scikit-learn.org/stable/index.html) 
 
