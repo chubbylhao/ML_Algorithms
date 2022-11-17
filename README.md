@@ -68,6 +68,10 @@
 - Isomap：使用测地距离代替MDS中的欧氏距离（保持了测地距离）
 - LLE：保持了样本和邻域之间的线性关系
 
+![](https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/dimension_reduction.png?raw=true)
+
+> LE、t-SNE（据说效果很好）目前尚未实现，后续考虑再加入几种降维算法
+
 以下为几种经典的降维算法分别在不同数据上的处理结果：
 
 |                           降维方法                           |                          iris 数据                           |                         s curve 数据                         |                       swiss roll 数据                        |
