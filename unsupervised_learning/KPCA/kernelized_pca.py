@@ -10,13 +10,13 @@ class KernelizedPCA:
         gamma: 高斯核参数
         power & coeff: 多项式核参数
     """
-    def __init__(self, d, kernel=rbf_kernel, gamma=0.3, power=4, coeff=1):
+    def __init__(self, d, kernel=rbf_kernel, gamma=0.2, power=4, coeff=1):
         self.d = d
         self.kernel = kernel(gamma=gamma, power=power, coeff=coeff)
 
     def dimension_reduction(self, X):
         """ 核方法非线性降维 """
-        n_samples, n_features = np.shape(X)
+        n_samples = X.shape[0]
         # 生成核矩阵
         kernel_matrix = np.zeros((n_samples, n_samples))
         for i in range(n_samples):
@@ -33,11 +33,15 @@ class KernelizedPCA:
 if __name__ == '__main__':
     def main():
         # from sklearn.datasets import load_iris
-        from sklearn.datasets import make_s_curve
-        import matplotlib.pyplot as plt
+        # import matplotlib.pyplot as plt
         # iris_data = load_iris()
         # X, Y = iris_data.data, iris_data.target
-        X, Y = make_s_curve(n_samples=1000, noise=0.15)
+
+        from sklearn.datasets import make_s_curve, make_swiss_roll
+        import matplotlib.pyplot as plt
+        # X, Y = make_s_curve(n_samples=500, noise=0.15, random_state=40)
+        X, Y = make_swiss_roll(n_samples=500, noise=0.15, random_state=100)
+
         kpca = KernelizedPCA(d=2)
         y = kpca.dimension_reduction(X)
         plt.scatter(y[:, 0], y[:, 1], c=Y)

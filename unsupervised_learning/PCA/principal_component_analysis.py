@@ -22,12 +22,16 @@ class PrincipalComponentAnalysis:
 
 if __name__ == '__main__':
     def main():
-        # from sklearn.datasets import load_iris
-        from sklearn.datasets import make_s_curve
+        from sklearn.datasets import load_iris
         import matplotlib.pyplot as plt
-        # iris_data = load_iris()
-        # X, Y = iris_data.data, iris_data.target
-        X, Y = make_s_curve(n_samples=1000, noise=0.15)
+        iris_data = load_iris()
+        X, Y = iris_data.data, iris_data.target
+
+        # from sklearn.datasets import make_s_curve, make_swiss_roll
+        # import matplotlib.pyplot as plt
+        # X, Y = make_s_curve(n_samples=500, noise=0.15, random_state=40)
+        # X, Y = make_swiss_roll(n_samples=500, noise=0.15, random_state=100)
+
         pca = PrincipalComponentAnalysis(d=2)
         y = pca.dimension_reduction(X)
         plt.scatter(y[:, 0], y[:, 1], c=Y)

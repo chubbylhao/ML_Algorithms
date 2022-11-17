@@ -19,7 +19,7 @@ class Isomap:
         k_index = np.argsort(euclidean_distance, axis=1)
         # 构建迭代用的初始距离矩阵
         for i in range(n_samples):
-            geodesic_distance[i, k_index[i, :self.k]] = euclidean_distance[i, k_index[i, :self.k]]
+            geodesic_distance[i, k_index[i, :self.k+1]] = euclidean_distance[i, k_index[i, :self.k+1]]
         # 使用Floyd算法进行迭代计算
         for step in range(n_samples):
             for i in range(n_samples):
@@ -52,10 +52,16 @@ class Isomap:
 
 if __name__ == '__main__':
     def main():
-        from sklearn.datasets import make_s_curve
+        # from sklearn.datasets import load_iris
+        # import matplotlib.pyplot as plt
+        # iris_data = load_iris()
+        # X, Y = iris_data.data, iris_data.target
+
+        from sklearn.datasets import make_s_curve, make_swiss_roll
         import matplotlib.pyplot as plt
-        # 超参可调，不要过分纠结，主要是弄清楚原理
-        X, Y = make_s_curve(n_samples=500)
+        # X, Y = make_s_curve(n_samples=500, noise=0.15, random_state=40)
+        X, Y = make_swiss_roll(n_samples=500, noise=0.15, random_state=100)
+
         isomap = Isomap(d=2, k=15)
         y = isomap.dimension_reduction(X)
         plt.scatter(y[:, 0], y[:, 1], c=Y)
