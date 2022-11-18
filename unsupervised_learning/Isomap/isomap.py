@@ -62,7 +62,7 @@ if __name__ == '__main__':
         # X, Y = make_s_curve(n_samples=500, noise=0.15, random_state=40)
         X, Y = make_swiss_roll(n_samples=500, noise=0.15, random_state=100)
 
-        isomap = Isomap(d=2, k=15)
+        isomap = Isomap(d=2, k=20)
         y = isomap.dimension_reduction(X)
         plt.scatter(y[:, 0], y[:, 1], c=Y)
         plt.show()

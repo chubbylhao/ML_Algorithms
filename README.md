@@ -81,6 +81,7 @@
 | 核主成分分析 (KPCA, Kernelized Principal Component Analysis) |                                                              | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/KPCA/kpca_s_curve.png?raw=true" style="zoom: 67%;" /> | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/KPCA/kpca_swiss_roll.png?raw=true" style="zoom: 67%;" /> |
 |            等度量映射 (Isomap, Isometric Mapping)            |                                                              | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/Isomap/isomap_s_curve.png?raw=true" style="zoom:67%;" /> | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/Isomap/isomap_swiss_roll.png?raw=true" style="zoom:67%;" /> |
 |         局部线性嵌入 (LLE, Locally Linear Embedding)         |                                                              | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/LLE/lle_s_curve.png?raw=true" style="zoom:67%;" /> | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/LLE/lle_swiss_roll.png?raw=true" style="zoom:67%;" /> |
+| Hessian 局部线性嵌入 (HLLE, Hessian Locally Linear Embedding) |                                                              |                                                              |                                                              |
 
 - Apriori：关联规则分析，实际上就是概率与组合的问题
 

@@ -50,8 +50,8 @@ if __name__ == '__main__':
 
         from sklearn.datasets import make_s_curve, make_swiss_roll
         import matplotlib.pyplot as plt
-        X, Y = make_s_curve(n_samples=500, noise=0.15, random_state=40)
-        # X, Y = make_swiss_roll(n_samples=500, noise=0.15, random_state=100)
+        # X, Y = make_s_curve(n_samples=500, noise=0.15, random_state=40)
+        X, Y = make_swiss_roll(n_samples=500, noise=0.15, random_state=100)
 
         lle = LLE(d=2, k=30)
         y = lle.dimension_reduction(X)
