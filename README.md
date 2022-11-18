@@ -75,6 +75,8 @@
 
 以下为几种经典的降维算法分别在不同数据上的处理结果：
 
+另附上HIT学长之前做过的工作：[https://github.com/heucoder/dimensionality_reduction_alo_codes](https://github.com/heucoder/dimensionality_reduction_alo_codes) 
+
 |                           降维方法                           |                          iris 数据                           |                         s curve 数据                         |                       swiss roll 数据                        |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |         多维缩放 (MDS, Multiple Dimensional Scaling)         | <img src="https://raw.githubusercontent.com/chubbylhao/ML_Algorithms/main/unsupervised_learning/MDS/mds_iris.png" style="zoom: 67%;" /> | <img src="https://raw.githubusercontent.com/chubbylhao/ML_Algorithms/main/unsupervised_learning/MDS/mds_s_curve.png" style="zoom: 67%;" /> | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/MDS/mds_swiss_roll.png?raw=true" style="zoom: 67%;" /> |
