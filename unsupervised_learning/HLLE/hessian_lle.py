@@ -19,7 +19,7 @@ class HessianLLE:
         # 获得每个样本点的k近邻（度量采用欧氏距离的平方）
         dist_matrix = MultipleDimensionalScaling.calculate_distance_matrix(X)
         k_neighbors_idx = np.argsort(dist_matrix)[:, 1:self.k + 1]
-        #
+        # 计算
         n_samples = X.shape[0]
         dp = self.d * (self.d + 1) // 2
         W = np.zeros((dp * n_samples, n_samples))
