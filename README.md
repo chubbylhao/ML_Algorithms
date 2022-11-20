@@ -71,7 +71,7 @@
 
 ![](https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/dimension_reduction.png?raw=true)
 
-> LTSA、LE、t-SNE（据说效果很好）目前尚未实现，后续有机会再补充吧
+> LTSA、t-SNE（据说效果很好）目前尚未实现，后续有机会再补充吧
 
 以下为几种经典的降维算法分别在不同数据上的处理结果：
 
@@ -85,6 +85,7 @@
 |            等度量映射 (Isomap, Isometric Mapping)            |                                                              | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/Isomap/isomap_s_curve.png?raw=true" style="zoom:67%;" /> | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/Isomap/isomap_swiss_roll.png?raw=true" style="zoom:67%;" /> |
 |         局部线性嵌入 (LLE, Locally Linear Embedding)         |                                                              | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/LLE/lle_s_curve.png?raw=true" style="zoom:67%;" /> | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/LLE/lle_swiss_roll.png?raw=true" style="zoom:67%;" /> |
 |  黑塞局部线性嵌入 (HLLE, Hessian Locally Linear Embedding)   |                                                              | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/HLLE/hlle_s_curve_k30.png?raw=true" style="zoom:67%;" /> | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/HLLE/hlle_swiss_roll_k15.png?raw=true" style="zoom:67%;" /> |
+|          拉普拉斯特征映射 (LE, Laplacian Eigenmaps)          |                                                              | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/LE/le_s_curve.png?raw=true" style="zoom:67%;" /> | <img src="https://github.com/chubbylhao/ML_Algorithms/blob/main/unsupervised_learning/LE/le_swiss_roll.png?raw=true" style="zoom:67%;" /> |
 
 - Apriori：关联规则分析，实际上就是概率与组合的问题
 
